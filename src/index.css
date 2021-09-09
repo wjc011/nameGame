@@ -1,13 +1,116 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+*
+
+
+.time {
+background-color: aqua;
+
+}
+.header {
+  color: gold;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  background-size: contain;
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.category {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 5px;
+
 }
+
+.logBox {
+  display: flex;
+  margin: auto;
+  width: 70%;
+  border: 1px, #ccc, solid;
+  border-style: solid;
+  height: 200px;
+  overflow: auto;
+  margin-bottom: 10px;
+  text-align: left;
+
+ 
+
+}
+
+.logBoxOverflow {
+  display: flex;
+  margin: auto;
+  width: 70%;
+  border: 1px, #ccc, solid;
+  border-style: solid;
+  overflow: auto;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.input {
+  display: flex;
+  margin-left: 41%;
+  margin-bottom: 5px;
+  
+}
+
+.hint {
+  color: rgb(7, 224, 7);
+}
+
+
+.normal{
+  background-color: white;
+}
+
+.highlight {
+  background-color: rgba(255, 0, 0, 0.623);
+}
+
+.startButton {
+  display: flex;
+  justify-content: center;
+
+}
+
+
+
+.popup {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  display: flex;
+  justify-content: center;
+  cursor:auto;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  width: 200px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 60px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -100px;
+  margin-top: 2100px;
+}
+
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+
+}
+
+
